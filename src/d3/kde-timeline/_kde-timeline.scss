@@ -1,0 +1,54 @@
+.kde-explosion {
+    fill: red;
+    opacity: 0.1;
+}
+
+.kde-explosion2 {
+    fill: red;
+    opacity: 0.5;
+
+    &.USA {
+        fill: blue;
+        stroke: blue;
+    }
+
+    &.USSR {
+        fill: red;
+        stroke: red;
+    }
+
+    &.UK {
+        fill: blue;
+        stroke: blue;
+    }
+
+    &.FRA {
+        fill: red;
+        stroke: blue;
+    }
+
+    &.PRC {
+        fill: red;
+        stroke: red;
+    }
+
+    &.UNK {
+        fill: cornflowerblue;
+        stroke: cornflowerblue;
+    }
+
+    &.INDI {
+        fill: orange;
+        stroke: green;
+    }
+
+    &.PAK {
+        fill: green;
+        stroke: green;
+    }
+
+    &.NK {
+        fill: red;
+        stroke: blue;
+    }
+}

@@ -1,0 +1,33 @@
+@import './_bootstrap-custom.scss';
+@import '../bower_components/bootstrap/scss/bootstrap.scss';
+
+// ui-bootstrap - bootstrap compatibility fix
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+
+// ui-bootstrap - bootstrap 4 tab fix
+ul.nav-tabs {
+    li {
+        @extend .nav-item;
+        a {
+            @extend .nav-link;
+        }
+        &.active {
+            a {
+                @extend .active;
+            }
+        }
+    }
+}
+
+
+
+body {
+    background-color: 'azure';
+//    font-family: 'Helvetica';
+}
+
+
+@import './d3/kde-timeline/_kde-timeline.scss';
+@import './d3/static-map/_static-map.scss';

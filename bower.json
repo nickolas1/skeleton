@@ -1,0 +1,24 @@
+{
+  "name": "skeleton",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "ng-lodash": "~0.3.0",
+    "angular-ui-router": "~0.2.15",
+    "d3": "~3.5.6",
+    "d3-geo-projection": "~0.2.15",
+    "topojson": "~1.6.19",
+    "ui-bootstrap": "~0.14.3",
+    "bootstrap": "4.0.0-alpha",
+    "angular-bootstrap": "~0.14.3"
+  },
+  "devDependencies": {}
+}

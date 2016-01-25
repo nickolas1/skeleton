@@ -1,0 +1,33 @@
+<!--
+<md-tabs class='md-primary' 
+         md-dynamic-height
+         md-border-bottom 
+         md-selected='ctrl.ui.currentTab'>
+    <md-tab label='one' ui-sref='home.one'><div ui-view='tabView'></div></md-tab>
+    <md-tab label='two' ui-sref='home.two'><div ui-view='tabView'></div></md-tab>
+    <md-tab label='three'></md-tab>
+</md-tabs>
+-->
+
+<uib-tabset>
+    <uib-tab ng-repeat='tab in ctrl.ui.tabs' 
+             heading='{{tab.name}}'
+             select='tab.select()'
+             active='tab.active'></uib-tab>
+<!--
+    <uib-tab 
+         heading='one' 
+         select='ctrl.ui.goOne()'
+         active="ctrl.ui.selectedTab === 'one'"></uib-tab>
+
+    <uib-tab 
+         heading='two' 
+         select='ctrl.ui.goTwo()'
+         ></uib-tab>
+    
+    <uib-tab heading='three'>
+    </uib-tab>
+-->
+</uib-tabset>
+
+<div ui-view='tabView'></div> 
